@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://collaborative-drawing-bo-25f95.web.app",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
   },
@@ -16,7 +16,7 @@ const io = socketIo(server, {
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://collaborative-drawing-bo-25f95.web.app",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
   })

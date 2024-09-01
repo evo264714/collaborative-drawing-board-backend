@@ -10,7 +10,7 @@ let db, boardCollection;
 const setupWebSocket = (server) => {
   const io = new Server(server, {
     cors: {
-      origin: "http://localhost:5173",
+      origin: "https://collaborative-drawing-bo-25f95.web.app",
       methods: ["GET", "POST"],
     },
   });
